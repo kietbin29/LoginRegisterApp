@@ -48,7 +48,7 @@ public class Register extends AppCompatActivity {
         password = etPassword.getText().toString().trim();
         reenterPassword = etReenterPassword.getText().toString().trim();
         if(!password.equals(reenterPassword)){
-            Toast.makeText(this, "Password entered does not match", Toast.LENGTH_SHORT).show(); //in 1 thông báo nhỏ dưới màn hình
+            Toast.makeText(this, "Password entered does not match", Toast.LENGTH_SHORT).show();
         }
         else if(!name.equals("") && !email.equals("") && !password.equals("")){
             StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {

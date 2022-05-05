@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                         finish();
                     } else if (response.equals("failure")) {
-                        Toast.makeText(MainActivity.this, "Email hoặc mật khẩu không hợp lệ!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Email or password is invalid!", Toast.LENGTH_SHORT).show();
                     }
                 }
             }, new Response.ErrorListener() {
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
             requestQueue.add(stringRequest);
         }else{
-            Toast.makeText(this, "Email và Mật khẩu không được để trống!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Email and Password cannot be blank!", Toast.LENGTH_SHORT).show();
         }
     }
 
