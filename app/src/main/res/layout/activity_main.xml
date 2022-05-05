@@ -28,7 +28,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="66dp"
                 android:gravity="center"
-                android:paddingLeft="20dp"
+                android:paddingStart="20dp"
                 android:paddingTop="10dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
@@ -45,14 +45,16 @@
                 android:layout_marginRight="12dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/inpit_boder"
-                android:hint="Email"
                 android:ems="10"
+                android:hint="@string/email"
                 android:inputType="textPersonName"
                 android:paddingLeft="10dp"
                 android:paddingTop="12dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="12dp"
-                android:textSize="18sp" />
+                android:textColorHint="#757575"
+                android:textSize="18sp"
+                tools:ignore="TextContrastCheck" />
 
             <EditText
                 android:id="@+id/etPassword"
@@ -64,12 +66,13 @@
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/inpit_boder"
                 android:ems="10"
+                android:hint="Password"
                 android:inputType="textPassword"
                 android:paddingLeft="10dp"
                 android:paddingTop="12dp"
                 android:paddingRight="10dp"
-                android:hint="Password"
                 android:paddingBottom="12dp"
+                android:textColorHint="#757575"
                 android:textSize="18sp" />
 
             <Button
